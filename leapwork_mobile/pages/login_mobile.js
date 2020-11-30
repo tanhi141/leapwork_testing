@@ -9,6 +9,7 @@ module.exports = {
   login: {
     skipButton : '//android.view.ViewGroup[@content-desc=\"tutorial_skip\"]',
     baseXpathActivationCode :  '//android.widget.EditText[@content-desc=\"activation_',
+  
     getXpathCode(index) {
       return this.baseXpathActivationCode + String(index) + '\"]';
     },
@@ -23,6 +24,7 @@ module.exports = {
     getXpathOtpCode(index) {
       return this.baseXpathOtpCode + String(index) + '\"]';
     },
+    
     userProfile: '//android.view.ViewGroup[@content-desc=\"bottomTab_settings\"]/android.view.ViewGroup/android.widget.ImageView',
     confirmButton: '//android.view.ViewGroup[@content-desc=\"confirm\"]',
     }

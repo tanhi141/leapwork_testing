@@ -6,7 +6,7 @@ const { I, loginMobileStep } = inject();
 Given('I have a defined step', () => {
   loginMobileStep.onAcionLater();
   loginMobileStep.skipTutorial();
-  loginMobileStep.inputActivationCode("hehmbakl0z");
+  loginMobileStep.inputActivationCode("uvtrvjqj98");
   loginMobileStep.login("Testing@123");
   loginMobileStep.inputOtpCode("111111")
 });

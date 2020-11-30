@@ -8,7 +8,7 @@ exports.config = {
       desiredCapabilities: {
         appPackage: 'com.leapxpert.manager.qa',
         appActivity: 'com.leapxpertapp.MainActivity',
-        noReset: true,
+        noReset: false,
         fullReset: false,
         automationName: 'UIAutomator2',
         newCommandTimeout: 30000

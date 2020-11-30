@@ -5,7 +5,6 @@ module.exports = {
     laterButton: '//android.widget.Button[@resource-id=\"android:id/button1\"]',
   },
 
-
   login: {
     skipButton : '//android.view.ViewGroup[@content-desc=\"tutorial_skip\"]',
     baseXpathActivationCode :  '//android.widget.EditText[@content-desc=\"activation_',
@@ -13,7 +12,6 @@ module.exports = {
     getXpathCode(index) {
       return this.baseXpathActivationCode + String(index) + '\"]';
     },
-
         
     nextButton :  '//android.view.ViewGroup[@content-desc=\"next\"]',
     usernameTextField : '//android.widget.EditText[@content-desc=\"login_username\"]',

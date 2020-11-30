@@ -1,17 +1,26 @@
 const { login } = require("../steps/login_mobile");
 
-const { I, loginMobileStep } = inject();
+const { I, loginMobileStep , chatsMobileStep} = inject();
 // Add in your custom step files
 
 //Nhiiiiii
-Given('I have a defined step', () => {
+Given('I test login', () => {
   loginMobileStep.onAcionLater();
   loginMobileStep.skipTutorial();
-  loginMobileStep.inputActivationCode("hehmbakl0z");
+  loginMobileStep.inputActivationCode("uvtrvjqj98");
   loginMobileStep.login("Testing@123");
   loginMobileStep.inputOtpCode("111111")
+
+  // chatsMobileStep.onAcionLater();
+  chatsMobileStep.startChat();
 });
 
+
+// Given('I create 1:1 Chat', () => {
+//   chatsMobileStep.onAcionLater();
+//   chatsMobileStep.startChat();
+
+// });
 
 
 

@@ -1,4 +1,4 @@
-const { I , constant} = inject();
+const { I } = inject();
 
 
 module.exports = {
@@ -13,13 +13,11 @@ module.exports = {
     I.fillField(xpath, text);
   },
 
-  async isContaintElement(xpath) {
+  isContaintElement(xpath) {
     I.waitForElement(xpath, 60);
     let value =  I.grabNumberOfVisibleElements(xpath);
     return value
   },
-
-
 
   //Ngaaaaaa
 }

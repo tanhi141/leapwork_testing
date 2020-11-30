@@ -8,7 +8,7 @@ exports.config = {
       desiredCapabilities: {
         appPackage: 'com.leapxpert.manager.qa',
         appActivity: 'com.leapxpertapp.MainActivity',
-        noReset: true,
+        noReset: false,
         fullReset: false,
         automationName: 'UIAutomator2',
         newCommandTimeout: 30000
@@ -33,8 +33,11 @@ exports.config = {
     I: './steps_file.js',
     loginMobilePage: './pages/login_mobile.js',
     loginMobileStep: './steps/login_mobile.js',
+    
+    chatsMobilePage: './pages/chats_mobile.js',
+    chatsMobileStep: './steps/chats_mobile.js',
+
     commonAction: './steps/commom_action.js', 
-    constant: './constant.js', 
   },
   mocha: {
     reporterOptions: {

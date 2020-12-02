@@ -33,8 +33,11 @@ exports.config = {
     I: './steps_file.js',
     loginMobilePage: './pages/login_mobile.js',
     loginMobileStep: './steps/login_mobile.js',
+    
+    chatsMobilePage: './pages/chats_mobile.js',
+    chatsMobileStep: './steps/chats_mobile.js',
+
     commonAction: './steps/commom_action.js', 
-    constant: './constant.js', 
   },
   mocha: {
     reporterOptions: {

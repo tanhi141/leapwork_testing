@@ -6,7 +6,6 @@ module.exports = {
       commonAction.onTapButton(loginMobilePage.updateAlert.laterButton);
     }
   },
-
   skipTutorial(){
     commonAction.onTapButton(loginMobilePage.login.skipButton);
   },

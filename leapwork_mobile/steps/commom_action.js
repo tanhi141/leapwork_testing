@@ -1,6 +1,8 @@
-const { I , constant} = inject();
+const { I } = inject();
+
 
 module.exports = {
+  //Nhiiii
   onTapButton(xpath) {
     I.waitForElement(xpath, 10);
     I.tap(xpath);
@@ -17,4 +19,5 @@ module.exports = {
     return value
   },
 
+  //Ngaaaaaa
 }

@@ -6,16 +6,15 @@ const { I, loginMobileStep, chatsMobileStep, filesMobileStep } = inject();
 //Nhiiiiii
 Given("I test login", () => {
   loginMobileStep.onAcionLater();
-
   loginMobileStep.skipTutorial();
-
-  loginMobileStep.inputActivationCode("1dhmwdkqno");
+  loginMobileStep.inputActivationCode("flpynyto1n");
   loginMobileStep.login("Testing@123");
-
   loginMobileStep.inputOtpCode("111111");
 });
 
-When("I create 1:1 Chat", () => {});
+When("I create 1:1 Chat", () => {
+  chatsMobileStep.startChat();
+});
 
 //Ngaaaaa
 Then("I upload files", () => {

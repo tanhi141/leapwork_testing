@@ -5,3 +5,5 @@ Feature: Business rules
 
   Scenario: Login
     Given I test login
+    When I create 1:1 Chat
+    Then I upload files

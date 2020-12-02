@@ -20,4 +20,16 @@ module.exports = {
   },
 
   //Ngaaaaaa
+
+  longPressElement(xBound,yBound){
+    I.touchPerform([{
+      action: 'press',
+      options: {
+        x: xBound,
+        y: yBound
+      }
+  }, {action: 'release'}])
+  
+  },
+
 }

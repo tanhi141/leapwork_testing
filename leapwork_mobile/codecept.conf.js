@@ -37,6 +37,9 @@ exports.config = {
     chatsMobilePage: './pages/chats_mobile.js',
     chatsMobileStep: './steps/chats_mobile.js',
 
+    filesMobilePage: './pages/files_mobile.js',
+    filesMobileStep:'./steps/files_mobile.js',
+
     commonAction: './steps/commom_action.js', 
   },
   mocha: {

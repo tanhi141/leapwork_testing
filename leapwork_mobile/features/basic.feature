@@ -4,7 +4,5 @@ Feature: Business rules
   As a personal
   I want to be able to interact with a system
 
-  Scenario: Login
-    Given I test login
-    When I create 1:1 Chat
-    Then I upload files
+Scenario: Chats Send Image
+    Given I test Chats send Image

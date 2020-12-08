@@ -40,6 +40,9 @@ exports.config = {
     filesMobilePage: './pages/files_mobile.js',
     filesMobileStep:'./steps/files_mobile.js',
 
+    sendImageMobilePage: './pages/send_image_mobile.js',
+    sendImageMobileStep:'./steps/send_image_mobile.js',
+
     commonAction: './steps/commom_action.js', 
   },
   mocha: {

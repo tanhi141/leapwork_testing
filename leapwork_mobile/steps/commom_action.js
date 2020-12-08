@@ -13,10 +13,21 @@ module.exports = {
     I.fillField(xpath, text);
   },
 
-  isContaintElement(xpath) {
-    I.waitForElement(xpath, 60);
-    let value =  I.grabNumberOfVisibleElements(xpath);
+  async isContaintElement(xpath) {
+    I.wait(30)
+    console.log('isContaintElementtttt');
+
+    let value = await I.grabNumberOfVisibleElements(xpath);
+    console.log('valueeee');
+    console.log(value);
     return value
+  },
+
+  // bc742d74-1dda-41e4-877f-fa2274d67efe
+  getXpathOfListView(baseXpath, index) {
+    I.waitForElement(  )
+    let listItem = I.findElement(elementId);
+    return listItem[index];
   },
 
   //Ngaaaaaa

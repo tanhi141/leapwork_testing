@@ -4,7 +4,7 @@ const { I } = inject();
 module.exports = {
   //Nhiiii
   onTapButton(xpath) {
-    I.waitForElement(xpath, 10);
+    I.waitForElement(xpath, 30);
     I.tap(xpath);
   },
 

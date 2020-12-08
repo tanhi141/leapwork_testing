@@ -23,7 +23,6 @@ module.exports = {
     },
   },
   
-  //maybe wrong
   listOption: {
     cameraButton: '//android.view.ViewGroup[@content-desc=\"chatDetail_camera\"]', 
     photosAndVideoButton: '//android.view.ViewGroup[@content-desc=\"chatDetail_sendPhoto\"]', 
@@ -32,10 +31,10 @@ module.exports = {
   },
 
   inputChatArea: {
-    bottomTab_chat: '//android.view.ViewGroup[@content-desc=\"bottomTab_chat\"]', 
-    bottomTab_contact: '//android.view.ViewGroup[@content-desc=\"bottomTab_contact\"]',
-    bottomTab_notification: '//android.view.ViewGroup[@content-desc=\"bottomTab_notification\"]', 
-    bottomTab_settings: '//android.view.ViewGroup[@content-desc=\"bottomTab_settings\"]', 
+    inputMessageTextField: '//android.widget.EditText[@content-desc=\"chatDetail_input\"]',
+    recordButton: '//android.view.ViewGroup[@content-desc=\"chatDetail_record\"]', 
+    attachButton: '//android.view.ViewGroup[@content-desc=\"chatDetail_attach\"]', 
+    sendMessageButton: '//android.view.ViewGroup[@content-desc=\"chatDetail_sendMessage\"]',
   },
 
   sendImageAndVideo: {

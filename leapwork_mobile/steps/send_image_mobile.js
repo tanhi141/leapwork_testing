@@ -19,7 +19,13 @@ module.exports = {
     //correct
 
     commonAction.onTapButton(sendImageMobilePage.sendImage.getXpathItemChat(3));
-    commonAction.onTapButton(sendImageMobilePage.listOption.bottomTab_contact);
+
+    commonAction.inputText('text', sendImageMobilePage.inputChatArea.inputMessageTextField);
+
+    commonAction.onTapButton(sendImageMobilePage.inputChatArea.attachButton);
+
+    
+    commonAction.onTapButton(sendImageMobilePage.listOption.cameraButton);
 
   },
 

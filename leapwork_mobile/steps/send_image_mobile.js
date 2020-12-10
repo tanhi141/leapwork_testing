@@ -26,6 +26,14 @@ module.exports = {
 
     
     commonAction.onTapButton(sendImageMobilePage.listOption.cameraButton);
+    //correct
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.doneButton);
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.sendButton);
+
 
   },
 

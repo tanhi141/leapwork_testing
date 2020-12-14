@@ -12,7 +12,7 @@ module.exports = {
     commonAction.onTapButton(chatsMobilePage.chats.createChatDropdownButton);
     commonAction.onTapButton(chatsMobilePage.chats.create1_1ChatButton);
     commonAction.onTapButton(chatsMobilePage.chats.teamButton);
-    //commonAction.onTapButton(chatsMobilePage.chats.firstItemOfListChat);
+    commonAction.onTapButton(chatsMobilePage.chats.firstItemOfListChat);
     I.waitForElement(chatsMobilePage.chats.createChatDropdownButton, 30);
     commonAction.onTapButton(chatsMobilePage.chats.attachmentButton);
   },

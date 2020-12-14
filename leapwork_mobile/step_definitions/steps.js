@@ -7,7 +7,7 @@ const { I, loginMobileStep, chatsMobileStep, filesMobileStep } = inject();
 Given("I test login", () => {
   //loginMobileStep.onAcionLater();
   // loginMobileStep.skipTutorial();
-  // loginMobileStep.inputActivationCode("krk3bqspuz");
+  // loginMobileStep.inputActivationCode("ema5xykn9f");
   // loginMobileStep.login("Testing@123");
   // loginMobileStep.inputOtpCode("111111");
 });

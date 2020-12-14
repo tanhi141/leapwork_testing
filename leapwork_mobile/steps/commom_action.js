@@ -21,11 +21,9 @@ module.exports = {
     I.touchPerform([{
       action: 'press',
       options: {
-        x: 500,
-        y: 1027
+        x: 328,
+        y: 996
       }
   }, {action: 'release'}])
   }
-  //256 1114
-
 }

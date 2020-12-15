@@ -15,7 +15,8 @@ module.exports = {
     commonAction.press();
     I.waitForElement(filesMobilePage.files.sendButon, 30);
     commonAction.onTapButton(filesMobilePage.files.sendButon);
-    
+    I.wait(10);
+    I.seeElement(filesMobilePage.files.fileUploaded);
   },
   
 }

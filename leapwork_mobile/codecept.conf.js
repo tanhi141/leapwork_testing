@@ -37,6 +37,8 @@ exports.config = {
     chatsMobileStep: './steps/chats_mobile.js',
     filesMobilePage: './pages/files_mobile.js',
     filesMobileStep:'./steps/files_mobile.js',
+    photoAndVideoPage: './pages/PhotoAndVideo.js',
+    photoAndVideoStep: './steps/photoAndVideo_mobile.js',
     commonAction: './steps/commom_action.js', 
     constant: './constant.js', 
   },

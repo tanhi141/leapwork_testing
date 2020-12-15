@@ -16,13 +16,13 @@ module.exports = {
     let value =  I.grabNumberOfVisibleElements(xpath);
     return value
   },
-
-  press(){
+//Ngaaaaa
+  press(x,y){
     I.touchPerform([{
       action: 'press',
       options: {
-        x: 328,
-        y: 996
+        x: x,
+        y: y
       }
   }, {action: 'release'}])
   }

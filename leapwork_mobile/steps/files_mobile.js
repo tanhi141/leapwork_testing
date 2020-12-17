@@ -10,7 +10,7 @@ module.exports = {
   selectFiles() {
     I.waitForElement(filesMobilePage.files.fileOption, 60);
     commonAction.onTapButton(filesMobilePage.files.fileOption);
-    I.waitForElement(filesMobilePage.files.alowButton, 60);
-    commonAction.onTapButton(filesMobilePage.files.alowButton);
+    I.waitForElement(filesMobilePage.files.allowButton, 60);
+    commonAction.onTapButton(filesMobilePage.files.allowButton);
   },
 }

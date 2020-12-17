@@ -1,8 +1,8 @@
 const { I } = inject();
 
 module.exports = {
-  files: {
-    fileOption:'//android.view.ViewGroup[@content-desc="chatDetail_sendFile"]',
+  photoAndVideo: {
+    photoAndVideoOption:'//android.view.ViewGroup[@content-desc="chatDetail_sendPhoto"]',
     allowOption:'//*[@class="android.widget.Button" and @text="ALLOW"]',
     denyOption: '//*[@class="android.widget.Button" and @text="DENY"]',
     sendButon: '//android.view.ViewGroup[@content-desc="iconSend"]',
@@ -11,7 +11,7 @@ module.exports = {
   
 }
 
-//android.view.ViewGroup[@content-desc="chatDetail_sendPhoto"]
+
 //android.view.ViewGroup[@content-desc="chatDetail_camera"]
 //android.view.ViewGroup[@content-desc="ic_back"]
 //android.view.ViewGroup[@content-desc="iconSend"]

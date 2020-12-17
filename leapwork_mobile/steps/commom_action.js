@@ -23,23 +23,13 @@ module.exports = {
     return value
   },
 
-  // bc742d74-1dda-41e4-877f-fa2274d67efe
-  getXpathOfListView(baseXpath, index) {
-    I.waitForElement(  )
-    let listItem = I.findElement(elementId);
-    return listItem[index];
-  },
-
-  //Ngaaaaaa
-  longPressElement(xBound,yBound){
+  press(x,y){
     I.touchPerform([{
       action: 'press',
       options: {
-        x: xBound,
-        y: yBound
+        x: x,
+        y: y
       }
   }, {action: 'release'}])
-  
-  },
-
+  }
 }

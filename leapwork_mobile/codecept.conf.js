@@ -31,17 +31,22 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
+    
     loginMobilePage: './pages/login_mobile.js',
     loginMobileStep: './steps/login_mobile.js',
     
-    chatsMobilePage: './pages/chats_mobile.js',
-    chatsMobileStep: './steps/chats_mobile.js',
-
-    filesMobilePage: './pages/files_mobile.js',
-    filesMobileStep:'./steps/files_mobile.js',
-
     sendImageMobilePage: './pages/send_image_mobile.js',
     sendImageMobileStep:'./steps/send_image_mobile.js',
+
+    chatsMobilePage: './pages/chats_mobile.js',
+    chatsMobileStep: './steps/chats_mobile.js',
+  
+    filesMobilePage: './pages/files_mobile.js',
+    filesMobileStep:'./steps/files_mobile.js',
+  
+    photoAndVideoPage: './pages/PhotoAndVideo.js',
+    photoAndVideoStep: './steps/photoAndVideo_mobile.js',
+
 
     commonAction: './steps/commom_action.js', 
   },

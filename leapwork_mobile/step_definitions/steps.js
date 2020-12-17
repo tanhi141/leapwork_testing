@@ -1,27 +1,39 @@
 const { login } = require("../steps/login_mobile");
 
-const { I, loginMobileStep, chatsMobileStep, filesMobileStep, sendImageMobileStep } = inject();
+
+const { I, loginMobileStep, chatsMobileStep, filesMobileStep, sendImageMobileStep , photoAndVideoStep} = inject();
 // Add in your custom step files
 
-// Given("I test login", () => {
-//   loginMobileStep.onAcionLater();
+//Start Login Correct
 
-//   loginMobileStep.skipTutorial();
+Given("I test login", () => {
+  // loginMobileStep.onAcionLater();
 
-//   loginMobileStep.inputActivationCode("1dhmwdkqno");
-//   loginMobileStep.login("Testing@123");
+  // loginMobileStep.skipTutorial();
 
-//   loginMobileStep.inputOtpCode("111111");
-// });
+  // loginMobileStep.inputActivationCode("1dhmwdkqno");
+  // loginMobileStep.login("Testing@123");
+
+  // loginMobileStep.inputOtpCode("111111");
+});
+// End Login Correct
 
 
-
-Given("I test Chats send Image", () => {
-  // sendImageMobileStep.onAcionLater();
-  // sendImageMobileStep.chatTeam_sendImage();
-  sendImageMobileStep.chatTeam_sendVideo()
-  
+When("I create 1:1 Chat", () => {
+  chatsMobileStep.startChat();
 });
 
 
-//Ngaaaaa
+Then("I test Chats send Image", () => {
+  // sendImageMobileStep.onAcionLater();
+  sendImageMobileStep.chatTeam_sendImage();
+});
+
+Then("I upload files", () => {
+  filesMobileStep.selectFiles();
+});
+
+Then("I upload Photo And Video", () => {
+  photoAndVideoStep.selectPhotoAndVideo();
+});
+

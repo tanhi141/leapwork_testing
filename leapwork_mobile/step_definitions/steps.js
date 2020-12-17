@@ -18,7 +18,9 @@ const { I, loginMobileStep, chatsMobileStep, filesMobileStep, sendImageMobileSte
 
 Given("I test Chats send Image", () => {
   // sendImageMobileStep.onAcionLater();
-  sendImageMobileStep.chatTeam()
+  // sendImageMobileStep.chatTeam_sendImage();
+  sendImageMobileStep.chatTeam_sendVideo()
+  
 });
 
 

@@ -13,10 +13,12 @@ module.exports = {
   startChat() {
     console.log('strat chatttt');
     I.waitForElement(sendImageMobilePage.chats.createChatDropdownButton, 120);
+   
     commonAction.onTapButton(sendImageMobilePage.chats.createChatDropdownButton);
+   
     commonAction.onTapButton(sendImageMobilePage.chats.create1_1ChatButton);
+   
     commonAction.onTapButton(sendImageMobilePage.chats.teamButton);
-    //correct
 
     commonAction.onTapButton(sendImageMobilePage.sendImage.getXpathItemChat(3));
 
@@ -24,23 +26,41 @@ module.exports = {
 
     commonAction.onTapButton(sendImageMobilePage.inputChatArea.attachButton);
 
-    
+   
+  },
+
+  sendImage() {
     commonAction.onTapButton(sendImageMobilePage.listOption.cameraButton);
-    //correct
 
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
 
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.doneButton);
 
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.sendButton);
-
-
   },
 
-  chatTeam() {
-    // this.onAcionLater();
+  sendVideo() {
+    commonAction.onTapButton(sendImageMobilePage.listOption.recordButton);
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
+
+    I.wait(5)
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.doneButton);
+
+    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.sendButton);
+  },
+
+  chatTeam_sendImage() {
     this.startChat();
-    
+    this.sendImage()
   },
+
+  // chatTeam_sendVideo() {
+  //   this.startChat();
+  //   this.sendVideo()
+  // },
   
 }

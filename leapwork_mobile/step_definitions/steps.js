@@ -16,17 +16,12 @@ Given("I test login", () => {
 
   // loginMobileStep.inputOtpCode("111111");
 });
+
 // End Login Correct
 
 
 When("I create 1:1 Chat", () => {
   chatsMobileStep.startChat();
-});
-
-
-Then("I test Chats send Image", () => {
-  // sendImageMobileStep.onAcionLater();
-  sendImageMobileStep.chatTeam_sendImage();
 });
 
 Then("I upload files", () => {
@@ -36,4 +31,8 @@ Then("I upload files", () => {
 Then("I upload Photo And Video", () => {
   photoAndVideoStep.selectPhotoAndVideo();
 });
+Then("I upload image by Camera", () => {
+  sendImageMobileStep.chatTeam_sendImage();
+});
+
 

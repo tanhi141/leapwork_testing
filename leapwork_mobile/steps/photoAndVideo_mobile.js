@@ -1,4 +1,4 @@
-const { I, commonAction , photoAndVideoPage} = inject();
+const { I, commonAction, chatsMobilePage, photoAndVideoPage} = inject();
 
 module.exports = {
   onAcionLater() {
@@ -8,8 +8,11 @@ module.exports = {
   },
 
   selectPhotoAndVideo() {
+    I.waitForElement(chatsMobilePage.chats.attachmentButton, 30);
+    commonAction.onTapButton(chatsMobilePage.chats.attachmentButton);
     I.waitForElement(photoAndVideoPage.photoAndVideo.photoAndVideoOption, 30);
     commonAction.onTapButton(photoAndVideoPage.photoAndVideo.photoAndVideoOption);
+    I.wait(10);
     //I.waitForElement(photoAndVideoPage.photoAndVideo.allowOption, 30);
     //commonAction.onTapButton(photoAndVideoPage.photoAndVideo.allowOption);
     commonAction.press(298,1111);

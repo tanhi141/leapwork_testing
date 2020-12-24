@@ -9,8 +9,8 @@ Feature: Business rules
 
   Scenario: Login
     Given I test login
-    Then I create 1:1 Chat
+    When I create 1:1 Chat
     Then I upload files
-    Then I upload Photo And Video
-    Then I upload image by Camera
+    And  I upload Photo And Video
+    And  I upload image by Camera
 

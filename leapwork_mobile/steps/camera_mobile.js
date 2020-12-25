@@ -9,20 +9,8 @@ module.exports = {
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.doneButton);
     commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.sendButton);
-  },
-
-  sendVideo() {
-    commonAction.onTapButton(sendImageMobilePage.listOption.recordButton);
-    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
-    I.wait(5);
-    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.enterButton);
-    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.doneButton);
-    commonAction.onTapButton(sendImageMobilePage.sendImageAndVideo.sendButton);
-  },
-
-  chatTeam_sendImage() {
-    this.sendImage();
-    //this.sendVideo();
+    I.wait(10);
+    I.seeElement(sendImageMobilePage.sendImageAndVideo.fileUploaded);
   }
   
 }

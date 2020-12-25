@@ -32,7 +32,7 @@ Then("I upload Photo And Video", () => {
   photoAndVideoStep.selectPhotoAndVideo();
 });
 Then("I upload image by Camera", () => {
-  sendImageMobileStep.chatTeam_sendImage();
+  sendImageMobileStep.sendImage();
 });
 
 

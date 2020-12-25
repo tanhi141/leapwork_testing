@@ -16,5 +16,6 @@ module.exports = {
     enterButton: '//android.view.View[@content-desc="Shutter button"]',  
     doneButton: '//android.widget.ImageView[@content-desc="Done"]',
     sendButton: '//android.view.ViewGroup[@content-desc="iconSend"]',
+    fileUploaded: '//android.view.ViewGroup[@content-desc="message_image"]',
   },
 }

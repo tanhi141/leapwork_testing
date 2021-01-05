@@ -35,8 +35,8 @@ exports.config = {
     loginMobilePage: './pages/login_mobile.js',
     loginMobileStep: './steps/login_mobile.js',
     
-    sendImageMobilePage: './pages/send_image_mobile.js',
-    sendImageMobileStep:'./steps/send_image_mobile.js',
+    sendImageMobilePage: './pages/camera_mobile.js',
+    sendImageMobileStep:'./steps/camera_mobile.js',
 
     chatsMobilePage: './pages/chats_mobile.js',
     chatsMobileStep: './steps/chats_mobile.js',
@@ -44,7 +44,7 @@ exports.config = {
     filesMobilePage: './pages/files_mobile.js',
     filesMobileStep:'./steps/files_mobile.js',
   
-    photoAndVideoPage: './pages/PhotoAndVideo.js',
+    photoAndVideoPage: './pages/photoAndVideo_mobile.js',
     photoAndVideoStep: './steps/photoAndVideo_mobile.js',
 
 

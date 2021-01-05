@@ -1,20 +1,17 @@
 const { login } = require("../steps/login_mobile");
+const login_web = require("../steps/login_web");
 
 
-const { I, loginMobileStep, chatsMobileStep, filesMobileStep, sendImageMobileStep , photoAndVideoStep} = inject();
+const { I, loginMobileStep, chatsMobileStep, filesMobileStep, sendImageMobileStep , photoAndVideoStep, LoginStep} = inject();
 // Add in your custom step files
 
 //Start Login Correct
 
 Given("I test login", () => {
-  // loginMobileStep.onAcionLater();
-
-  // loginMobileStep.skipTutorial();
-
-  // loginMobileStep.inputActivationCode("1dhmwdkqno");
-  // loginMobileStep.login("Testing@123");
-
-  // loginMobileStep.inputOtpCode("111111");
+  loginMobileStep.skipTutorial();
+  loginMobileStep.inputActivationCode("1dhmwdkqno");
+  loginMobileStep.login("Testing@123");
+  loginMobileStep.inputOtpCode("111111");
 });
 
 // End Login Correct
@@ -35,4 +32,7 @@ Then("I upload image by Camera", () => {
   sendImageMobileStep.sendImage();
 });
 
-
+//Website
+Given("I login to Website", () => {
+  LoginStep.login_web();
+});

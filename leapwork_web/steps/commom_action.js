@@ -2,12 +2,7 @@ const { I } = inject();
 
 
 module.exports = {
-  //Nhiiii
-  onTapButton(xpath) {
-    I.waitForElement(xpath, 30);
-    I.tap(xpath);
-  },
-
+  
   inputText(text, xpath) {
     I.waitForElement(xpath, 30);
     I.fillField(xpath, text);
@@ -22,16 +17,6 @@ module.exports = {
     console.log(value);
     return value
   },
-  press(x,y){
-    I.touchPerform([{
-      action: 'press',
-      options: {
-        x: x,
-        y: y
-      }
-  }, {action: 'release'}])
-  },
-
   
   ///WEB
   inputToTextboxByPlaceholder(xpath, value, ...args) {
@@ -41,6 +26,11 @@ module.exports = {
   },
 
   clickToButtonByNameButton(xpath, ...args) {
+    xpath = this.formatXpath(xpath, ...args);
+    I.waitForElement(xpath, 30);
+    I.click(xpath);
+  },
+  clickToButton(xpath) {
     I.waitForElement(xpath, 30);
     I.click(xpath);
   },

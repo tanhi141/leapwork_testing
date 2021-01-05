@@ -4,14 +4,6 @@ Feature: Business rules
   As a personal
   I want to be able to interact with a system
 
-  # Scenario: Login
-  #   Given I test login
-  #   When I create 1:1 Chat
-  #   Then I upload files
-  #   And  I upload Photo And Video
-  #   And  I upload image by Camera
-
-
     Scenario: Get code Login
     Given I login to Website
     # When I create 1:1 Chat

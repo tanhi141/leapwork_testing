@@ -8,7 +8,6 @@ module.exports = {
   teamButton: '//android.view.ViewGroup[@content-desc=\"contact_tab_teams\"]',
   firstItemOfListChat: '//*[@class="android.widget.TextView" and @text="01, Thao"]',
   attachmentButton: '//android.view.ViewGroup[@content-desc="chatDetail_attach"]/android.widget.TextView',
-  
   },
   
 }

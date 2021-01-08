@@ -11,13 +11,15 @@ exports.config = {
     Puppeteer: {
       url: 'https://web.qa.leapxpert.app',
       show: true,
-      windowSize: '1366x768'
+      windowSize: 'maximize'
     }
   },
   include: {
     I: './steps_file.js',
     LoginPage: "./pages/login_web.js",
     LoginStep: "./steps/login_web.js",
+    GetCodePage:"./pages/getCode_web.js",
+    GetCodeStep:"./steps/getCode_web.js",
     commonLocatorPage: "./pages/commonLocator.js",
     commonAction: './steps/commom_action.js',
   },

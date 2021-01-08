@@ -11,7 +11,6 @@ module.exports = {
   async isContaintElement(xpath) {
     I.wait(30)
     console.log('isContaintElementtttt');
-
     let value = await I.grabNumberOfVisibleElements(xpath);
     console.log('valueeee');
     console.log(value);
@@ -33,6 +32,12 @@ module.exports = {
   clickToButton(xpath) {
     I.waitForElement(xpath, 30);
     I.click(xpath);
+  },
+  async getCode(xpath) {
+    let pin =  I.grabTextFrom(GetCodePage.getCode.codeTextbox);
+    console.log(pin);
+    console.log("abc");
+    return pin;
   },
 
 }

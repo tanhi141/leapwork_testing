@@ -7,12 +7,20 @@ module.exports = {
     I.amOnPage('/login');
     I.waitForText('Login', 10);
     commonAction.inputText("auto_testing", LoginPage.login.companyTextbox);
-    commonAction.clickToButtonByNameButton(commonLocatorPage.DYNAMIC_BUTTON,"Next");
-    //commonAction.clickToButton(LoginPage.login.nextButton);
-    I.waitForText("Forgot password",30);
-    commonAction.inputToTextboxByPlaceholder(commonLocatorPage.DYNAMIC_TEXTBOX,"abc","Username");
-    commonAction.inputToTextboxByPlaceholder(commonLocatorPage.DYNAMIC_TEXTBOX,"abc","Password",);
-    commonAction.clickToButtonByNameButton(commonLocatorPage.DYNAMIC_BUTTON,"Login");
+    commonAction.clickToButton(LoginPage.login.nextButton);
+    commonAction.inputText("automation_auto_26",LoginPage.login.username);
+    commonAction.inputText("Testing@123",LoginPage.login.password);
+    commonAction.clickToButton(LoginPage.login.loginBtn);
+  },
+
+  enter_code() {    
+    commonAction.inputText("1", LoginPage.login.securityCode1);
+    commonAction.inputText("1", LoginPage.login.securityCode2);
+    commonAction.inputText("1", LoginPage.login.securityCode3);
+    commonAction.inputText("1", LoginPage.login.securityCode4);
+    commonAction.inputText("1", LoginPage.login.securityCode5);
+    commonAction.inputText("1", LoginPage.login.securityCode6);
+    //commonAction.clickToButton(LoginPage.login.confirmBtn);
   },
   
   
